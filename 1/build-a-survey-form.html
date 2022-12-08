@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles_form.css" />
+    <meta charset="UTF-8" />
+    <meta lang="en" />
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">
+      Thank you for taking the time to help us improve the platform
+    </p>
+    <form id="survey-form">
+      <label id="name-label"
+        >Name <input id="name" type="text" placeholder="You name" required
+      /></label>
+      <label id="email-label"
+        >Email <input id="email" type="email" placeholder="You email" required
+      /></label>
+      <label id="number-label"
+        >Number
+        <input
+          id="number"
+          type="number"
+          min="18"
+          max="70"
+          placeholder="You number"
+      /></label>
+      <label
+        >What country are you from?
+        <select id="dropdown">
+          <option></option>
+          <option>Germany</option>
+          <option>US</option>
+          <option>Ukraine</option>
+          <option>Russia</option>
+        </select>
+      </label>
+
+      <label>What's your gender?</label>
+      <label
+        ><input type="radio" value="man" name="gender" class="inline" />
+        Man</label
+      >
+      <label
+        ><input type="radio" value="woman" name="gender" class="inline" />
+        Woman</label
+      >
+      <br />
+      <label>What do you like to do?</label>
+      <label
+        ><input type="checkbox" value="travel" class="inline" /> Travel</label
+      >
+      <label
+        ><input type="checkbox" value="dance" class="inline" /> Dance</label
+      >
+      <label
+        ><input type="checkbox" value="study" class="inline" /> Study</label
+      >
+      <label><input type="checkbox" value="swim" class="inline" /> Swim</label>
+      <label
+        >Please, write your comment<textarea
+          rows="5"
+          placeholder="You comment here..."
+        ></textarea>
+      </label>
+      <input type="submit" value="Submit" id="submit" />
+    </form>
+  </body>
+</html>
